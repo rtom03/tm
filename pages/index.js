@@ -33,12 +33,12 @@ export default function Home() {
 
   return (
     <Container
-      title="Manu Arora - Developer, Writer, Creator"
+      title="Tomiwa Raheem --- Developer, Writer, Creator"
       description="Full-Stack developer, JavaScript enthusiast, Freelancer, Tech Blogger and a Learner. I love building products and web apps that impact millions of lives."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
         <Header />
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+        {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Recent Blogs
         </h3>
         <BlogPost
@@ -72,7 +72,7 @@ export default function Home() {
               />
             </svg>
           </a>
-        </Link>
+        </Link> */}
 
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Projects
@@ -179,7 +179,7 @@ export default function Home() {
             icon="more"
           />
         </div>
-        <div className=" my-6 md:my-10">
+        {/* <div className=" my-6 md:my-10">
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-8 mt-8 text-black dark:text-white">
             Tech Talks and Videos
           </h3>
@@ -236,7 +236,7 @@ export default function Home() {
               </svg>
             </a>
           </div>
-        </div>
+        </div> */}
 
         <Timeline />
         <Contact />

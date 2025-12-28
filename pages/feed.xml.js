@@ -3,7 +3,7 @@ import RSS from "rss";
 
 export async function getServerSideProps({ res }) {
   const feed = new RSS({
-    title: "Manu Arora",
+    title: "Tomiwa Raheem",
     site_url: "https://manuarora.in",
     feed_url: "https://manuarora.in/feed.xml",
   });

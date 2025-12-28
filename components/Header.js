@@ -32,7 +32,7 @@ const Header = () => {
     <div className="flex flex-col md:flex-row justify-between items-start md:space-x-14  w-full mb-10">
       <div className="flex md:w-3/4 flex-col mt-6">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-2 text-black dark:text-white">
-          Manu Arora
+          Tomiwa Raheem
         </h1>
 
         <div className="relative leading-7 items-center flex-wrap text-zinc-700 dark:text-zinc-400 mb-5">
@@ -150,11 +150,11 @@ const Header = () => {
           Senior Software Engineer building SaaS products and web apps. Find me
           on{" "}
           <a
-            href="https://twitter.com/mannupaaji"
+            href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
             className="font-bold group dark:text-zinc-400 font-inter relative inline-flex  overflow-hidden"
             target="__blank"
           >
-            <span className="relative">twitter</span>
+            <span className="relative">LinkdIn</span>
           </a>{" "}
           for tech updates and memes.
         </p>
@@ -162,7 +162,7 @@ const Header = () => {
 
       <div className=" relative flex-shrink-1 p-4 md:p-4 md:order-last order-first">
         <a
-          href="https://twitter.com/mannupaaji"
+          href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
           target="__blank"
           className="block  z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5  relative bg-white h-20 w-20"
         >

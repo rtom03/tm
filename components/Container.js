@@ -19,7 +19,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: "Manu Arora – Developer, writer, creator.",
+    title: "Tomiwa Raheem – Developer, writer, creator.",
     description: `Full-Stack developer, JavaScript enthusiast, Freelancer and a Learner.`,
     image: "https://manuarora.in/static/images/banner.png",
     type: "website",
@@ -31,10 +31,10 @@ export default function Container(props) {
       name: "Home",
       link: "/",
     },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
 
     {
       name: "Snippets",
@@ -59,10 +59,10 @@ export default function Container(props) {
       name: "Projects",
       link: "/projects",
     },
-    {
-      name: "Blog",
-      link: "/blog",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/blog",
+    // },
 
     {
       name: "Snippets",
@@ -119,7 +119,7 @@ export default function Container(props) {
           aria-label="Toggle Dark Mode"
           type="button"
           className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-900/90 dark:ring-teal-500/50 dark:hover:ring-white/20"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          onClick={() => setTheme(theme === "dark" ? "dark" : "dark")}
         >
           {mounted && (
             <svg

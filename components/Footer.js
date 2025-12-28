@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NowPlaying from "@/components/NowPlaying";
+import { FaLinkedin } from "react-icons/fa";
 
 const ExternalLink = ({ href, children }) => (
   <a
@@ -42,14 +43,12 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://github.com/manuarora700">
-            GitHub
-          </ExternalLink>
-          <ExternalLink href="https://linkedin.com/in/manuarora28">
+          <ExternalLink href="https://github.com/rtom03">GitHub</ExternalLink>
+          <ExternalLink href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/">
             LinkedIn
           </ExternalLink>
-          <ExternalLink href="https://twitter.com/mannupaaji">
-            Twitter
+          <ExternalLink href="https://www.upwork.com/freelancers/~01b34de894dd66e2f3">
+            Upwork
           </ExternalLink>
           <ExternalLink href="https://instagram.com/maninthere">
             Instagram
@@ -59,9 +58,6 @@ export default function Footer() {
               Freelancing
             </a>
           </Link>
-          {/* <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
-            YouTube
-          </ExternalLink> */}
         </div>
         <div className="flex flex-col space-y-4">
           <Link href="/snippets">
@@ -101,25 +97,24 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <p className="flex flex-row text-gray-400 items-center">
+      <p className="flex flex-row text-gray-400 items-center gap-2">
         Find me on
-        <a href="https://twitter.com" target="__blank">
+        <a
+          href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
+          target="__blank"
+        >
           {/* <img src="/logos/tailwind.svg" className="h-6 w-6 mx-1" /> */}
-          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 mx-1">
-            <g>
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-            </g>
-          </svg>
+          <FaLinkedin />
         </a>{" "}
-        and{" "}
-        <a href="https://www.peerlist.io/manuarora" target="__blank">
-          <img src="/peerlist.png" className="h-5 w-5 mx-1" />
-        </a>
       </p>
       <p className="flex flex-row text-gray-400 items-center mt-2">
         Portfolio inspired by{" "}
-        <a href="https://leerob.io" className="ml-1" target="__blank">
-          Lee Rob
+        <a
+          href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
+          className="ml-1"
+          target="__blank"
+        >
+          rtom
         </a>
       </p>
     </footer>

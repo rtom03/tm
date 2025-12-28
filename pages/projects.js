@@ -19,11 +19,11 @@ export default function projects() {
           I’ve developed commercial projects as well as hobby projects. All
           projects are included (along with course related projects) here.
           –&nbsp;
-          <Link href="/blog">
+          {/* <Link href="/blog">
             <a className="text-blue-500 hover:underline">
               checkout my blog&nbsp;
             </a>
-          </Link>
+          </Link> */}
           while you're here. <br />I write about technology, learning and memes.
         </h2>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">

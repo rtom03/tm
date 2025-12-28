@@ -21,7 +21,7 @@ export default async (req, res) => {
       
         <link rel="stylesheet" href="css/styles.css?v=1.0">
       
-      </head>
+      </head>  
       
       <body>
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
@@ -44,7 +44,6 @@ export default async (req, res) => {
                 <a href="https://instagram.com/maninthere/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
                 <a href="https://linkedin.com/in/manuarora28/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">LinkedIn</a>
                 <a href="https://twitter.com/mannupaaji/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
-                
               </div>
               </div>
       </body>
