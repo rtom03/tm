@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NowPlaying from "@/components/NowPlaying";
 import { FaLinkedin } from "react-icons/fa";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/LegacyLink";
 
 const ExternalLink = ({ href, children }) => (
   <span

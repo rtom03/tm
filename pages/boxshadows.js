@@ -11,7 +11,7 @@ import cards from "@/constants/boxshadows/cards";
 import Footer from "@/components/Footer";
 import { GenerateBoxShadow } from "@/components/BoxShadows/GenerateBoxShadow";
 import { useTheme } from "next-themes";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/components/LegacyLink";
 
 export default function BoxShadows() {
   const [visible, setVisible] = useState(false);

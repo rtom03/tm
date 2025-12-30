@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/components/LegacyLink";
 
 export default function CardBasic() {
   return (

@@ -5,7 +5,7 @@ import format from "comma-number";
 import fetcher from "@/lib/fetcher";
 
 import { twMerge } from "tailwind-merge";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/components/LegacyLink";
 
 const BlogPost = ({ title, summary, slug }) => {
   const { data } = useSWR(`/api/views/${slug}`, fetcher);

@@ -23,7 +23,7 @@ import TwitterCardsFramerMotionExample from "./SnippetsComponents/TwitterCardsFr
 import MeteorEffect from "./MeteorEffect/MeteorEffect";
 import { CardHoverEffect } from "./CardHoverEffect/CardHoverEffect";
 import { PreviewContainer } from "./PreviewContainer/PreviewContainer";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/LegacyLink";
 
 const CustomLink = (props) => {
   const href = props.href;

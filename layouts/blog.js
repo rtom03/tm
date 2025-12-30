@@ -4,7 +4,7 @@ import { parseISO, format } from "date-fns";
 import Container from "@/components/Container";
 import ViewCounter from "@/components/ViewCounter";
 import Contact from "@/components/Contact";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/components/LegacyLink";
 
 export default function BlogLayout({ children, frontMatter }) {
   return (

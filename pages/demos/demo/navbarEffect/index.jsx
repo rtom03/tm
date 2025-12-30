@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/components/LegacyLink";
 
 export default function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null);

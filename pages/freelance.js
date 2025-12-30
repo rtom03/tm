@@ -1,7 +1,7 @@
 import Container from "@/components/Container";
 import { FreelanceCard } from "@/components/FreelanceCard";
 // import Link from "next/link";
-import LegacyLink from "./LegacyLink";
+import LegacyLink from "@/components/LegacyLink";
 
 export default function Freelance() {
   return (
