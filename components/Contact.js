@@ -59,13 +59,13 @@ export default function Contact() {
       <p className="my-1 text-gray-800 dark:text-gray-200">
         Drop your message and let's discuss about your project.
       </p>
-      <a
+      <span
         href="https://wa.me/919587738861?text=I want to work on a project with you"
         className="mt-4 px-4 text-center w-full font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded"
         type="submit"
       >
         Chat on WhatsApp
-      </a>
+      </span>
 
       <Divider />
       <p className="my-1 text-gray-800 dark:text-gray-200">

@@ -11,9 +11,9 @@ export default function FreeCodeCamp({ showDesc = true }) {
       {showDesc && (
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
           I’ve been writing articles for{" "}
-          <a href="https://www.freecodecamp.org/news/author/manu/">
+          <span href="https://www.freecodecamp.org/news/author/manu/">
             freeCodeCamp
-          </a>{" "}
+          </span>{" "}
           where I generally write about projects and technical learnings. Some
           of the articles that I wrote are down below.
         </h2>

@@ -60,7 +60,7 @@ export default function Words({ fallbackData }) {
       <div className=" my-4 w-full  relative">
         {!session && (
           // eslint-disable-next-line @next/next/no-html-link-for-pages
-          <a
+          <span
             href="/api/auth/signin/github"
             className="flex items-center justify-center my-4 font-bold px-4 py-2 bg-slate-100 dark:bg-slate-800 text-gray-900 dark:text-gray-100 rounded w-64"
             onClick={(e) => {
@@ -69,7 +69,7 @@ export default function Words({ fallbackData }) {
             }}
           >
             <AiFillGithub className="mr-2 " /> Login to write
-          </a>
+          </span>
         )}
         {session?.user && (
           <form

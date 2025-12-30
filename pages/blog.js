@@ -35,7 +35,7 @@ export default function Blog({ posts }) {
 
   return (
     <Container
-      title="Blog – Manu Arora"
+      title="Blog – Tomiwa Raheem"
       description="Thoughts on the Software Development, Programming, Tech, Freelancing, Open Source and Memes"
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">

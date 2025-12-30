@@ -5,14 +5,15 @@ import format from "comma-number";
 import fetcher from "@/lib/fetcher";
 
 import { twMerge } from "tailwind-merge";
+import LegacyLink from "./LegacyLink";
 
 const BlogPost = ({ title, summary, slug }) => {
   const { data } = useSWR(`/api/views/${slug}`, fetcher);
   const views = data?.total;
 
   return (
-    <Link href={`/blog/${slug}`} className="">
-      <a
+    <LegacyLink href={`/blog/${slug}`} className="" legacyBehavior>
+      <span
         className={twMerge(
           "w-full bg-gray-100 dark:bg-zinc-800 dark:border-zinc-700 rounded-md mb-4 p-4 border border-gray-200"
         )}
@@ -28,8 +29,8 @@ const BlogPost = ({ title, summary, slug }) => {
           </div>
           {/* <p className="text-gray-600 dark:text-gray-400">{summary}</p> */}
         </div>
-      </a>
-    </Link>
+      </span>
+    </LegacyLink>
   );
 };
 

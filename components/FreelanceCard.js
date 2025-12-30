@@ -9,20 +9,20 @@ export const FreelanceCard = ({
 }) => {
   return (
     <div className="grid md:grid-cols-2 gap-4 mx-auto mb-12">
-      <a href={href} target="__blank" className="max-w-sm mb-4 inline-block">
+      <span href={href} target="__blank" className="max-w-sm mb-4 inline-block">
         <img
           src={image}
           className="max-w-sm rounded-xl shadow-xl w-80 object-contain"
         />
-      </a>
+      </span>
       <div>
-        <a
+        <span
           href={href}
           target="__blank"
           className="font-bold text-2xl mb-2 inline-block"
         >
           {title}
-        </a>
+        </span>
         {descriptions.map((el) => (
           <p key={el} className="text-gray-500 dark:text-gray-300 text-sm mb-2">
             {el}

@@ -4,20 +4,20 @@ import { parseISO, format } from "date-fns";
 import Container from "@/components/Container";
 import ViewCounter from "@/components/ViewCounter";
 import Contact from "@/components/Contact";
-import Link from "next/link";
+import LegacyLink from "./LegacyLink";
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
     <Container
-      title={`${frontMatter.title} – Manu Arora`}
+      title={`${frontMatter.title} – Tomiwa Raheem`}
       description={frontMatter.summary}
       image={`https://manuarora.in${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
-        <Link href="/blog">
-          <a>
+        <LegacyLink href="/blog">
+          <span>
             <svg
               className="h-8 w-8 dark:text-white text-gray-500"
               xmlns="http://www.w3.org/2000/svg"
@@ -32,15 +32,15 @@ export default function BlogLayout({ children, frontMatter }) {
                 d="M7 16l-4-4m0 0l4-4m-4 4h18"
               />
             </svg>
-          </a>
-        </Link>
+          </span>
+        </LegacyLink>
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           {frontMatter.title}
         </h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2 mb-8">
           <div className="flex items-center">
             <Image
-              alt="Manu Arora"
+              alt="Tomiwa Raheem"
               height={24}
               width={24}
               src="/avatar.jpg"
@@ -48,7 +48,7 @@ export default function BlogLayout({ children, frontMatter }) {
             />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
-              {"Manu Arora / "}
+              {"Tomiwa Raheem / "}
               {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
             </p>
           </div>
@@ -65,21 +65,21 @@ export default function BlogLayout({ children, frontMatter }) {
           <Contact />
         </div>
         {/* <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
+          <span
             href={discussUrl(frontMatter.slug)}
             target="_blank"
             rel="noopener noreferrer"
           >
             {"Discuss on Twitter"}
-          </a>
+        </span>
           {` • `}
-          <a
+          <span
             href={editUrl(frontMatter.slug)}
             target="_blank"
             rel="noopener noreferrer"
           >
             {"Edit on GitHub"}
-          </a>
+        </span>
         </div> */}
       </article>
     </Container>

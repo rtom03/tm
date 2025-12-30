@@ -1,13 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import LegacyLink from "./LegacyLink";
 
 export default function CardBasic() {
   return (
     <div>
       <div className="bg-gray-200 h-screen">
         <div className="px-8">
-          <Link href="https://manuarora.in/snippets/tailwind-card">
-            <a>
+          <LegacyLink href="https://manuarora.in/snippets/tailwind-card">
+            <span>
               <div className="mx-auto lg:w-3/5 lg:flex lg:flex-row lg:h-auto ">
                 <img
                   src="https://picsum.photos/id/237/200/300"
@@ -32,7 +33,7 @@ export default function CardBasic() {
                       />
                       <div className="ml-4">
                         <p className="text-gray-800 text-sm font-semibold">
-                          Manu Arora
+                          Tomiwa Raheem
                         </p>
                         <p className="text-gray-400 text-sm">Next JS</p>
                       </div>
@@ -50,8 +51,8 @@ export default function CardBasic() {
                   </div>
                 </div>
               </div>
-            </a>
-          </Link>
+            </span>
+          </LegacyLink>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectFCC = ({ link, image, title, date }) => {
   return (
-    <a href={link} className=" w-full mb-10  h-full" target="__blank">
+    <span href={link} className=" w-full mb-10  h-full" target="__blank">
       <div className="relative overflow-hidden h-52 flex items-center justify-center rounded-md w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-600">
         <img
           src={image}
@@ -15,7 +15,7 @@ const ProjectFCC = ({ link, image, title, date }) => {
           {title}
         </h2>
       </div>
-    </a>
+    </span>
   );
 };
 

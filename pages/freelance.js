@@ -1,11 +1,12 @@
 import Container from "@/components/Container";
 import { FreelanceCard } from "@/components/FreelanceCard";
-import Link from "next/link";
+// import Link from "next/link";
+import LegacyLink from "./LegacyLink";
 
 export default function Freelance() {
   return (
     <Container
-      title="Freelancing – Manu Arora"
+      title="Freelancing – Tomiwa Raheem"
       description="Freelance projects and SaaS application that I've developed."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-4 w-full">
@@ -16,19 +17,19 @@ export default function Freelance() {
           I love building products and web apps for humans. 👑 <br />
           Most of my projects come from my website. However, I'm also a Top
           Rated Freelancer on{" "}
-          <a
+          <span
             className="font-bold text-[#15A800]"
             href="https://www.upwork.com/freelancers/~0185da6b935f149e8c"
           >
             Upwork
-          </a>{" "}
+          </span>{" "}
           and Teach coding to people on{" "}
-          <a
+          <span
             href="https://www.codementor.io/@manuarorawork"
             className="text-[#009FC6] font-bold"
           >
             Codementor
-          </a>
+          </span>
           .
         </p>
         <h2 className="font-bold text-2xl md:text-3xl tracking-tight mb-6 text-black dark:text-white">
@@ -95,7 +96,7 @@ export default function Freelance() {
             "Secure Login and Authentication system.",
           ]}
         />
-        <a
+        <span
           href="https://www.upwork.com/freelancers/~0185da6b935f149e8c"
           target="__blank"
           className="text-gray-500 dark:text-gray-300  rounded-md flex flex-row space-x-2 items-center mb-10"
@@ -115,7 +116,7 @@ export default function Freelance() {
               d="M7 16l-4-4m0 0l4-4m-4 4h18"
             />
           </svg>
-        </a>
+        </span>
 
         <h2 className="font-bold text-2xl md:text-3xl tracking-tight mb-6 mt-6 text-black dark:text-white">
           Featured SaaS Applications
@@ -148,8 +149,8 @@ export default function Freelance() {
           ]}
         />
 
-        <Link href="/projects">
-          <a className="text-gray-500 dark:text-gray-300  rounded-md flex flex-row space-x-2 items-center mb-10">
+        <LegacyLink href="/projects">
+          <span className="text-gray-500 dark:text-gray-300  rounded-md flex flex-row space-x-2 items-center mb-10">
             <p>See all of my Projects</p>
             <svg
               className="h-8 w-8 dark:text-white text-gray-500 transform rotate-180"
@@ -165,8 +166,8 @@ export default function Freelance() {
                 d="M7 16l-4-4m0 0l4-4m-4 4h18"
               />
             </svg>
-          </a>
-        </Link>
+          </span>
+        </LegacyLink>
       </div>
     </Container>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import LegacyLink from "./LegacyLink";
 
 export default function FunctionCard({
   title,
@@ -9,8 +10,8 @@ export default function FunctionCard({
   ...rest
 }) {
   return (
-    <Link href={`/snippets/${slug}`}>
-      <a
+    <LegacyLink href={`/snippets/${slug}`}>
+      <span
         className="border border-grey-200 dark:border-zinc-800 rounded-xl p-4 w-full relative"
         {...rest}
       >
@@ -28,7 +29,7 @@ export default function FunctionCard({
           {title}
         </h3>
         <p className="mt-1 text-gray-700 dark:text-gray-400">{description}</p>
-      </a>
-    </Link>
+      </span>
+    </LegacyLink>
   );
 }

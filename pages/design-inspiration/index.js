@@ -64,7 +64,7 @@ export default function DesignInspiration({ snippets }) {
   ];
   return (
     <Container
-      title="Design Inspiration - Manu Arora"
+      title="Design Inspiration - Tomiwa Raheem"
       description="Designers and design engineers I follow and look up to."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
@@ -83,21 +83,21 @@ export default function DesignInspiration({ snippets }) {
               {item.name}
             </h2>
             <div className="flex items-center gap-2">
-              <a
+              <span
                 href={item.twitter}
                 target="_blank"
                 className="text-neutral-600 text-sm dark:text-neutral-300"
               >
                 @{item.twitter.split("/").pop()}
-              </a>
+              </span>
               <span className="bg-neutral-300 h-1 w-1 text-sm dark:bg-neutral-600 rounded-full"></span>
-              <a
+              <span
                 href={item.website}
                 target="_blank"
                 className="text-neutral-600 text-sm dark:text-neutral-300"
               >
                 {item.website.replace("https://", "").replace("www.", "")}
-              </a>
+              </span>
             </div>
             <div className="grid  grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               {item.images.map((image) => (

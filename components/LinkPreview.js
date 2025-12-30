@@ -45,10 +45,10 @@ export const LinkPreview = ({ children, url, className }) => {
     <>
       {/**
        * Microlink.io + next/image can take a few seconds to fetch and generate
-       * a screenshot. The delay makes <LinkPreview> pointless. As a hacky
+       * a screenshot. The delay makes pointless. As a hacky
        * solution we create a second <Image> in a Portal after the component has
        * mounted. This <Image> triggers microlink.io + next/image so that the
-       * image itself is ready by the time the user hovers on a <LinkPreview>.
+       * image itself is ready by the time the user hovers on a.
        * Not concerned about the performance impact because <Image>'s are cached
        * after they are generated and the images themselves are tiny (< 10kb).
        */}
@@ -86,7 +86,7 @@ export const LinkPreview = ({ children, url, className }) => {
             enterTo="opacity-100 translate-y-0 scale-100"
             className="shadow-xl rounded-xl"
           >
-            <a
+            <span
               href={url}
               className="block p-1 bg-white border border-transparent shadow rounded-xl hover:border-pink-500"
               // Unfortunate hack to remove the weird whitespace left by
@@ -103,7 +103,7 @@ export const LinkPreview = ({ children, url, className }) => {
                 priority={true}
                 className="rounded-lg"
               />
-            </a>
+            </span>
           </Transition>
         </HoverCardPrimitive.Content>
       </HoverCardPrimitive.Root>

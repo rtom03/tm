@@ -8,13 +8,13 @@ export default function Banner() {
       {visible && (
         <div className="text-sm md:text-md px-10 relative mx-auto text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 py-3 font-normal">
           📣 Tailwind Master Kit: 100+ Professional, ready to embed &nbsp;
-          <a
+          <span
             href="https://tailwindmasterkit.com"
             target="__blank"
             className="underline font-semibold"
           >
             Tailwind Components
-          </a>
+          </span>
           <button
             className="absolute right-0 mr-2"
             onClick={() => setVisible(false)}

@@ -11,7 +11,7 @@ export default function ProjectCard({ title, description, href, icon, tags }) {
     mouseY.set(clientY - top);
   }
   return (
-    <a
+    <span
       className="group mb-4 hover:shadow-lg rounded-xl  transition duration-200 relative border border-slate-200 dark:border-slate-700 w-full"
       href={href}
       aria-label={title}
@@ -500,7 +500,7 @@ export default function ProjectCard({ title, description, href, icon, tags }) {
           </div>
         </div>
       </div>
-    </a>
+    </span>
   );
 }
 

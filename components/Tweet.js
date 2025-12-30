@@ -30,7 +30,7 @@ export default function Tweet({
   return (
     <div className="rounded border border-gray-300 dark:border-gray-800 px-6 py-4 my-4 w-full">
       <div className="flex items-center">
-        <a
+        <span
           className="flex h-12 w-12"
           href={authorUrl}
           target="_blank"
@@ -43,8 +43,8 @@ export default function Tweet({
             src={author.profile_image_url}
             className="rounded-full"
           />
-        </a>
-        <a
+        </span>
+        <span
           href={authorUrl}
           className="author"
           target="_blank"
@@ -71,8 +71,8 @@ export default function Tweet({
           <span className="text-gray-500" title={`@${author.username}`}>
             @{author.username}
           </span>
-        </a>
-        <a
+        </span>
+        <span
           className="ml-auto"
           href={authorUrl}
           target="_blank"
@@ -89,7 +89,7 @@ export default function Tweet({
               style={{ fill: "#3BA9EE" }}
             />
           </svg>
-        </a>
+        </span>
       </div>
       <div className="mt-4 mb-1 leading-normal whitespace-pre-wrap text-lg text-gray-700 dark:text-gray-300">
         {formattedText}
@@ -109,7 +109,7 @@ export default function Tweet({
         </div>
       ) : null}
       {quoteTweet ? <Tweet {...quoteTweet} /> : null}
-      <a
+      <span
         className="text-gray-500 text-sm hover:underline"
         href={tweetUrl}
         target="_blank"
@@ -121,9 +121,9 @@ export default function Tweet({
         >
           {format(createdAt, "h:mm a - MMM d, y")}
         </time>
-      </a>
+      </span>
       <div className="flex text-gray-700 dark:text-gray-300 mt-2">
-        <a
+        <span
           className="flex items-center mr-4 text-gray-500 hover:text-blue-600 transition hover:underline"
           href={replyUrl}
           target="_blank"
@@ -136,8 +136,8 @@ export default function Tweet({
             />
           </svg>
           <span>{comma(public_metrics.reply_count)}</span>
-        </a>
-        <a
+        </span>
+        <span
           className="flex items-center mr-4 text-gray-500 hover:text-green-600 transition hover:underline"
           href={retweetUrl}
           target="_blank"
@@ -150,8 +150,8 @@ export default function Tweet({
             />
           </svg>
           <span>{comma(public_metrics.retweet_count)}</span>
-        </a>
-        <a
+        </span>
+        <span
           className="flex items-center text-gray-500 hover:text-red-600 transition hover:underline"
           href={likeUrl}
           target="_blank"
@@ -164,7 +164,7 @@ export default function Tweet({
             />
           </svg>
           <span>{comma(public_metrics.like_count)}</span>
-        </a>
+        </span>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import cards from "@/constants/boxshadows/cards";
 import Footer from "@/components/Footer";
 import { GenerateBoxShadow } from "@/components/BoxShadows/GenerateBoxShadow";
 import { useTheme } from "next-themes";
+import LegacyLink from "./LegacyLink";
 
 export default function BoxShadows() {
   const [visible, setVisible] = useState(false);
@@ -29,14 +30,14 @@ export default function BoxShadows() {
     <div className="relative antialiased">
       <div className="bg-gradient-to-r from-zinc-800  to-zinc-900 text-center py-2 dark:text-white">
         Awesome Tailwindcss and{" "}
-        <a
+        <span
           href="https://aceternity.com/components?ref=manuarora"
           target="__blank"
           rel="dofollow"
           className="underline decoration-[2px] decoration-lime-500 dark:text-white"
         >
           Framer Motion Components
-        </a>
+        </span>
       </div>
       <Metadata />
       <CustomNav
@@ -89,7 +90,7 @@ const StaticCard = ({ shadow, name, vanillaCSS, customCSS }) => {
     >
       <div className="text-center">
         Adding more, bookmark to stay updated, and maybe 👇🏻😇
-        <a
+        <span
           href="https://www.buymeacoffee.com/manuarora"
           className="flex items-center justify-center rounded-md overflow-hidden mt-2"
           target="_blank"
@@ -101,7 +102,7 @@ const StaticCard = ({ shadow, name, vanillaCSS, customCSS }) => {
             width="174"
             className="rounded-md"
           />
-        </a>{" "}
+        </span>{" "}
       </div>
     </div>
   );
@@ -225,26 +226,26 @@ const CustomNav = ({ onModalClick, setTheme, theme, mounted }) => {
   return (
     <nav className="w-full h-16 bg-white dark:bg-zinc-700 dark:border-0 border-b border-t border-gray-100 px-4 md:px-20 flex flex-row justify-between items-center">
       <div className="flex items-center space-x-2">
-        <Link href="/">
-          <a>
+        <LegacyLink href="/">
+          <span>
             <Image
               src="/logo.png"
               className="h-full w-full rounded-md"
               width="40px"
               height="40px"
             />
-          </a>
-        </Link>
+          </span>
+        </LegacyLink>
       </div>
       <div className="flex flex-row items-center">
         {" "}
-        <a
+        <span
           href="https://github.com/manuarora700/manuarora.in/blob/master/pages/boxshadows.js"
           target="__blank"
           className="text-gray-400 underline hidden sm:block text-sm font-normal mr-4"
         >
           Code? Here.
-        </a>
+        </span>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -283,7 +284,7 @@ const CustomNav = ({ onModalClick, setTheme, theme, mounted }) => {
         >
           Custom CSS to JIT 🚀
         </button>
-        <a
+        <span
           href="https://www.producthunt.com/posts/tailwind-box-shadows?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-tailwind-box-shadows"
           target="_blank"
         >
@@ -293,7 +294,7 @@ const CustomNav = ({ onModalClick, setTheme, theme, mounted }) => {
             // style="width: 250px; height: 54px;"
             className="h-10 w-auto"
           />
-        </a>
+        </span>
       </div>
     </nav>
   );
@@ -316,7 +317,7 @@ const Metadata = () => {
       />
       <link rel="canonical" href={`https://manuarora.in${router.asPath}`} />
       <meta property="og:type" content={`website`} />
-      <meta property="og:site_name" content="Manu Arora" />
+      <meta property="og:site_name" content="Tomiwa Raheem" />
       <meta
         property="og:description"
         content={`A curated list of box shadows for TailwindCSS. Available in classes, JIT

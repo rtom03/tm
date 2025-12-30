@@ -4,6 +4,7 @@ import BlogPost from "@/components/BlogPost";
 import ProjectCard from "@/components/ProjectCard";
 import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
+import LegacyLink from "@/components/LegacyLink";
 
 import { LIGHT_COLORS } from "@/lib/constants";
 
@@ -51,28 +52,7 @@ export default function Home() {
           summary="Build a modern, minimal portfolio website with Next.js and tailwindcss for developers that gets you hired for Full Stack Developer roles in 2021."
           slug="developer-portfolio-website"
         />
-        <Link href="/blog">
-          <a
-            type="button"
-            className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
-          >
-            See All Blogs
-            <svg
-              className="h-4 w-4 ml-1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </a>
-        </Link> */}
+      
 
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Projects
@@ -130,8 +110,8 @@ export default function Home() {
             tags={["Next.js", "Stripe", "TailwindCSS"]}
           />
         </div>
-        <Link href="/projects">
-          <a
+        <LegacyLink href="/projects">
+          <span
             type="button"
             className="flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium text-gray-900 dark:text-gray-100"
           >
@@ -150,8 +130,8 @@ export default function Home() {
                 d="M19 9l-7 7-7-7"
               />
             </svg>
-          </a>
-        </Link>
+        </span>
+        </LegacyLink>
 
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-8 text-black dark:text-white">
           Upcoming Projects
@@ -213,7 +193,7 @@ export default function Home() {
             url={`https://www.youtube.com/watch?v=uncrKqVtgrc`}
           />
           <div className="flex w-full justify-center">
-            <a
+            <span
               type="button"
               href="https://www.youtube.com/channel/UC7MQDjVfjEPkHMe1lZGkDRA"
               target="__blank"
@@ -234,7 +214,7 @@ export default function Home() {
                   d="M19 9l-7 7-7-7"
                 />
               </svg>
-            </a>
+          </span>
           </div>
         </div> */}
 

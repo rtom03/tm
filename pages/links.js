@@ -6,7 +6,7 @@ import clsx from "clsx";
 export default function Links() {
   return (
     <Container
-      title="Links – Manu Arora"
+      title="Links – Tomiwa Raheem"
       description="Links to all my socials, projects, source codes and memes."
     >
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
@@ -17,7 +17,7 @@ export default function Links() {
           Links to all my socials, projects, source codes and memes.
         </p>
         {links?.map((el) => (
-          <a
+          <span
             key={el?.href}
             href={el?.href}
             target="__blank"
@@ -26,7 +26,7 @@ export default function Links() {
             <span className="inline-block mr-2">{el?.icon}</span>{" "}
             <el.icon className={clsx("h-5 w-5", el?.iconClass)} />
             <span className="font-bold">{el?.name}</span>
-          </a>
+          </span>
         ))}
       </div>
     </Container>

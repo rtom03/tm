@@ -1,7 +1,7 @@
 <p align="center">
-  <a href="https://github.com/manuarora700/portfolio-website">
+  <span href="https://github.com/manuarora700/portfolio-website">
     <img src="https://manuarora.in/logo.png" alt="Logo" width="80" height="80">
-  </a>
+</span>
   </p>
 
 # UPDATE 🚀
@@ -79,4 +79,4 @@ If you're interested in learning Next.js and building real-world applications wi
 
 # Support
 
-<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<span href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></span>

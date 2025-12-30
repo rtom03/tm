@@ -15,14 +15,14 @@ export default function NowPlaying() {
       </svg>
       <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
         {data?.songUrl ? (
-          <a
+          <span
             className="text-gray-800 dark:text-gray-200 font-medium  max-w-max truncate"
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
             {data.title}
-          </a>
+          </span>
         ) : (
           <p className="text-gray-800 dark:text-gray-200 font-medium">
             Not Playing

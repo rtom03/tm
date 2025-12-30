@@ -1,16 +1,17 @@
 import Link from "next/link";
 import NowPlaying from "@/components/NowPlaying";
 import { FaLinkedin } from "react-icons/fa";
+import LegacyLink from "./LegacyLink";
 
 const ExternalLink = ({ href, children }) => (
-  <a
+  <span
     className="text-gray-500 hover:text-gray-600 transition"
     target="_blank"
     rel="noopener noreferrer"
     href={href}
   >
     {children}
-  </a>
+  </span>
 );
 
 export default function Footer() {
@@ -20,27 +21,31 @@ export default function Footer() {
       <hr className="w-full border-1 border-gray-200 dark:border-gray-800 mb-8" />
       <div className="w-full max-w-2xl grid grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4">
-          <Link href="/">
-            <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
-          </Link>
-          <Link href="/blog">
-            <a className="text-gray-500 hover:text-gray-600 transition">Blog</a>
-          </Link>
-          <Link href="/dashboard">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+          <LegacyLink href="/">
+            <span className="text-gray-500 hover:text-gray-600 transition">
+              Home
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/blog">
+            <span className="text-gray-500 hover:text-gray-600 transition">
+              Blog
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/dashboard">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Dashboard
-            </a>
-          </Link>
-          <Link href="/projects">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/projects">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Projects
-            </a>
-          </Link>
-          <Link href="/links">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/links">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Links
-            </a>
-          </Link>
+            </span>
+          </LegacyLink>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://github.com/rtom03">GitHub</ExternalLink>
@@ -53,69 +58,69 @@ export default function Footer() {
           <ExternalLink href="https://instagram.com/maninthere">
             Instagram
           </ExternalLink>
-          <Link href="/freelance">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+          <LegacyLink href="/freelance">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Freelancing
-            </a>
-          </Link>
+            </span>
+          </LegacyLink>
         </div>
         <div className="flex flex-col space-y-4">
-          <Link href="/snippets">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+          <LegacyLink href="/snippets">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Snippets
-            </a>
-          </Link>
-          <Link href="/tweets">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/tweets">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Tweets
-            </a>
-          </Link>
-          <Link href="/resources">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/resources">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Resources
-            </a>
-          </Link>
-          <Link href="/demos">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/demos">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Live Demos
-            </a>
-          </Link>
-          <Link href="/freecodecamp">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/freecodecamp">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               freeCodeCamp
-            </a>
-          </Link>
-          <Link href="/boxshadows">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/boxshadows">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Box Shadows
-            </a>
-          </Link>
-          <Link href="/design-inspiration">
-            <a className="text-gray-500 hover:text-gray-600 transition">
+            </span>
+          </LegacyLink>
+          <LegacyLink href="/design-inspiration">
+            <span className="text-gray-500 hover:text-gray-600 transition">
               Design Inspiration
-            </a>
-          </Link>
+            </span>
+          </LegacyLink>
         </div>
       </div>
       <p className="flex flex-row text-gray-400 items-center gap-2">
         Find me on
-        <a
+        <span
           href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
           target="__blank"
         >
           {/* <img src="/logos/tailwind.svg" className="h-6 w-6 mx-1" /> */}
           <FaLinkedin />
-        </a>{" "}
+        </span>{" "}
       </p>
       <p className="flex flex-row text-gray-400 items-center mt-2">
         Portfolio inspired by{" "}
-        <a
+        <span
           href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
           className="ml-1"
           target="__blank"
         >
           rtom
-        </a>
+        </span>
       </p>
     </footer>
   );

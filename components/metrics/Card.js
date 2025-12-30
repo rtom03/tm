@@ -1,7 +1,7 @@
 export default function MetricCard({ header, link, metric }) {
   return (
     <div className="metric-card dark:border-zinc-800  p-4 max-w-72 w-full rounded-xl shadow-custom border border-[#212121]">
-      <a
+      <span
         aria-label={header}
         target="_blank"
         rel="noopener noreferrer"
@@ -24,7 +24,7 @@ export default function MetricCard({ header, link, metric }) {
             />
           </svg>
         </div>
-      </a>
+      </span>
       <p className="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white">
         {metric || "-"}
       </p>

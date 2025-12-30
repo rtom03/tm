@@ -98,7 +98,7 @@ export default function Container(props) {
         />
         <link rel="canonical" href={`https://manuarora.in${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Manu Arora" />
+        <meta property="og:site_name" content="Tomiwa Raheem" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
@@ -112,9 +112,9 @@ export default function Container(props) {
         )}
       </Head>
       <nav className="sticky-nav flex justify-between items-center max-w-4xl w-full p-8 mt-0 mb-0 md:mt-4 md:mb-10  mx-auto bg-white dark:bg-zinc-900 bg-opacity-60">
-        <a href="#skip" className="sr-only focus:not-sr-only">
+        <span href="#skip" className="sr-only focus:not-sr-only">
           Skip to content
-        </a>
+        </span>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -273,7 +273,7 @@ export const Desktop = ({ links, hoveredIndex, setHoveredIndex, router }) => {
     <>
       {links.map((navLink, index) => (
         <NextLink href={navLink.link}>
-          <a
+          <span
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             className="relative rounded-lg px-3 inline-block py-2 text-sm text-gray-700 dark:text-gray-200 transition-all delay-150 hover:text-gray-900 dark:hover:text-gray-900"
@@ -305,7 +305,7 @@ export const Desktop = ({ links, hoveredIndex, setHoveredIndex, router }) => {
             {router.asPath === navLink.link && (
               <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-blue-500/0 via-blue-500/40 to-blue-500/0 dark:from-blue-400/0 dark:via-blue-400/40 dark:to-blue-400/0"></span>
             )}
-          </a>
+          </span>
         </NextLink>
       ))}
     </>

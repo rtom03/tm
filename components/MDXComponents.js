@@ -23,6 +23,7 @@ import TwitterCardsFramerMotionExample from "./SnippetsComponents/TwitterCardsFr
 import MeteorEffect from "./MeteorEffect/MeteorEffect";
 import { CardHoverEffect } from "./CardHoverEffect/CardHoverEffect";
 import { PreviewContainer } from "./PreviewContainer/PreviewContainer";
+import LegacyLink from "./LegacyLink";
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -30,13 +31,13 @@ const CustomLink = (props) => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
-        <a {...props} />
-      </Link>
+      <LegacyLink href={href}>
+        <span {...props} />
+      </LegacyLink>
     );
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />;
+  return <span target="_blank" rel="noopener noreferrer" {...props} />;
 };
 
 const MDXComponents = {

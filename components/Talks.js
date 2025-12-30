@@ -2,7 +2,7 @@ import React from "react";
 
 const Talks = ({ url, company, image, title, description }) => {
   return (
-    <a
+    <span
       href={url}
       className="flex flex-col md:flex-row space-x-0 md:space-x-4 mb-10"
       target="__blank"
@@ -19,7 +19,7 @@ const Talks = ({ url, company, image, title, description }) => {
         </div>
         <p className="text-gray-500 dark:text-gray-400 text-sm">{company}</p>
       </div>
-    </a>
+    </span>
   );
 };
 

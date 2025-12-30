@@ -37,7 +37,7 @@ const Header = () => {
 
         <div className="relative leading-7 items-center flex-wrap text-zinc-700 dark:text-zinc-400 mb-5">
           Building
-          <a
+          <span
             className={
               "inline-block px-2 py-0 font-bold bg-gray-100 dark:bg-zinc-700 dark:text-white  mx-1"
             }
@@ -45,9 +45,9 @@ const Header = () => {
             target="__blank"
           >
             Aceternity
-          </a>
+          </span>
           ,
-          <a
+          <span
             className={
               "inline-block px-2 py-0 font-bold bg-gray-100 dark:bg-zinc-700 dark:text-white mx-1"
             }
@@ -55,7 +55,7 @@ const Header = () => {
             target="__blank"
           >
             Rogue
-          </a>
+          </span>
           other
           <span
             className="font-bold cursor-pointer text-zinc-800 dark:text-zinc-200"
@@ -149,19 +149,19 @@ const Header = () => {
         <p className="text-zinc-600 dark:text-zinc-500">
           Senior Software Engineer building SaaS products and web apps. Find me
           on{" "}
-          <a
+          <span
             href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
             className="font-bold group dark:text-zinc-400 font-inter relative inline-flex  overflow-hidden"
             target="__blank"
           >
             <span className="relative">LinkdIn</span>
-          </a>{" "}
+          </span>{" "}
           for tech updates and memes.
         </p>
       </div>
 
       <div className=" relative flex-shrink-1 p-4 md:p-4 md:order-last order-first">
-        <a
+        <span
           href="https://www.linkedin.com/in/tomiwa-raheem-98b19a398/"
           target="__blank"
           className="block  z-[5] overflow-hidden rounded shadow-xl ring-1 ring-slate-900/5  relative bg-white h-20 w-20"
@@ -172,7 +172,7 @@ const Header = () => {
             className="bg-gray-100 object-contain"
             src="/avatar-new.png"
           />
-        </a>
+        </span>
         <div className="z-0">
           <div className="absolute left-0 -right-12 top-0 h-px bg-slate-900/[0.1] dark:bg-zinc-300/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
           <div className="absolute -top-8 bottom-0 left-12 w-px bg-slate-900/[0.1] dark:bg-zinc-300/[0.1] [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]"></div>
@@ -194,12 +194,12 @@ export default Header;
 
 export const Hyperlink = ({ link, text }) => {
   return (
-    <a
+    <span
       href={link}
       className="inline-block font-bold text-zinc-700 dark:text-zinc-200 transform hover:scale-105 transition duration-200"
       target="__blank"
     >
       {text}
-    </a>
+    </span>
   );
 };

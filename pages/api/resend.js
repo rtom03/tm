@@ -8,7 +8,7 @@ const sendEmail = async (req, res) => {
   const { email, message } = req.body;
   try {
     const data = await resend.emails.send({
-      from: "Manu Arora <hi@manuarora.in>",
+      from: "Tomiwa Raheem <hi@manuarora.in>",
       to: [email],
       cc: ["hi@manuarora.in"],
       subject: `Thank you for reaching out to Manu`,

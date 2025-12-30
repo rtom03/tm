@@ -146,9 +146,9 @@ export default function Timeline() {
       <Year>2023</Year>
       <ul>
         <Step title="300+ users on Algochurn 🤌🏻">
-          <a href="https://algochurn.com" target="__blank">
+          <span href="https://algochurn.com" target="__blank">
             Algochurn
-          </a>{" "}
+          </span>{" "}
           crossed 300 users and I couldn't be any happier.
         </Step>
       </ul>
@@ -157,34 +157,34 @@ export default function Timeline() {
       <ul>
         <Step title="Started working on Moonbeam 🤩">
           Started working on{" "}
-          <a href="https://gomoonbeam.com" target="__blank">
+          <span href="https://gomoonbeam.com" target="__blank">
             Moonbeam{" "}
-          </a>
+          </span>
           as a front-end developer. Building a chrome extension was the most fun
           and challenging part.
         </Step>
         <Step title="Algochurn crosses 200 users 🤌🏻">
-          <a href="https://algochurn.com" target="__blank">
+          <span href="https://algochurn.com" target="__blank">
             Algochurn
-          </a>{" "}
+          </span>{" "}
           is now helping 200+ registered users and 14,000+ monthly users.
         </Step>
         <Step title="1,000+ Followers on Twitter 🌟">
           Crossed 1,000 mark on{" "}
-          <a
+          <span
             href="https://www.twitter.com/mannupaaji"
             className="font-semibold"
             target="__blank"
           >
             Twitter
-          </a>
+          </span>
           . You can help increase the count by following me. 😉
         </Step>
         <Step title="Built and launched Algochurn 🍾">
           Built{" "}
-          <a href="https://algochurn.com" target="__blank">
+          <span href="https://algochurn.com" target="__blank">
             Algochurn
-          </a>
+          </span>
           , A platform to practice DS ALgo along with front-end to ace your next
           technical interview.
         </Step>
@@ -199,13 +199,16 @@ export default function Timeline() {
       <ul>
         <Step title="Built Tailwind Master Kit 🪁">
           Built{" "}
-          <a href="https://www.tailwindmasterkit.com">TailwindMasterKit</a>, A
-          SaaS marketplace for beautiful, handcrafted Website components built
-          with and for Tailwind supported websites. Built the components from
-          the ground up for React and HTML in 30+ categories.
+          <span href="https://www.tailwindmasterkit.com">
+            TailwindMasterKit
+          </span>
+          , A SaaS marketplace for beautiful, handcrafted Website components
+          built with and for Tailwind supported websites. Built the components
+          from the ground up for React and HTML in 30+ categories.
         </Step>
         <Step title="Created covidrescue.co.in 💊">
-          Created <a href="https://www.covidrescue.co.in">covidrescue.co.in</a>
+          Created{" "}
+          <span href="https://www.covidrescue.co.in">covidrescue.co.in</span>
           to help people with verified leads on Oxygen, Remdesivir, Food, Beds,
           ICU, Medicines and more.
         </Step>
