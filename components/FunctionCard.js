@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import LegacyLink from "@/LegacyLink";
+import LegacyLink from "./LegacyLink";
 
 export default function FunctionCard({
   title,

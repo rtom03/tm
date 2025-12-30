@@ -1,11 +1,11 @@
-import hydrate from "next-mdx-remote/hydrate";
+import { MDXRemote } from "next-mdx-remote";
 
 import { getFiles, getFileBySlug } from "@/lib/mdx";
 import SnippetLayout from "@/layouts/snippets";
 import MDXComponents from "@/components/MDXComponents";
 
 export default function Snippet({ mdxSource, frontMatter }) {
-  const content = hydrate(mdxSource, {
+  const content = MDXRemote(mdxSource, {
     components: MDXComponents,
   });
 

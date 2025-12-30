@@ -23,7 +23,7 @@ import TwitterCardsFramerMotionExample from "./SnippetsComponents/TwitterCardsFr
 import MeteorEffect from "./MeteorEffect/MeteorEffect";
 import { CardHoverEffect } from "./CardHoverEffect/CardHoverEffect";
 import { PreviewContainer } from "./PreviewContainer/PreviewContainer";
-import LegacyLink from "@/LegacyLink";
+import LegacyLink from "./LegacyLink";
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -37,7 +37,7 @@ const CustomLink = (props) => {
     );
   }
 
-  return <span target="_blank" rel="noopener noreferrer" {...props} />;
+  return <a target="_blank" rel="noopener noreferrer" {...props} />;
 };
 
 const MDXComponents = {
@@ -47,7 +47,7 @@ const MDXComponents = {
   ProsCard,
   Step,
   StepLarge,
-  StepCheck,kijungtfry76
+  StepCheck,
   Tweet,
   VideoDemo,
   HighlightBox,
@@ -60,7 +60,7 @@ const MDXComponents = {
   TwitterCardsFramerMotionExample,
   MeteorEffect,
   CardHoverEffect,
-,.  PreviewContainer,
+  PreviewContainer,
 };
 
 export default MDXComponents;
