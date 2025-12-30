@@ -47,7 +47,7 @@ const MDXComponents = {
   ProsCard,
   Step,
   StepLarge,
-  StepCheck,
+  StepCheck,kijungtfry76
   Tweet,
   VideoDemo,
   HighlightBox,
@@ -60,7 +60,7 @@ const MDXComponents = {
   TwitterCardsFramerMotionExample,
   MeteorEffect,
   CardHoverEffect,
-  PreviewContainer,
+,.  PreviewContainer,
 };
 
 export default MDXComponents;
