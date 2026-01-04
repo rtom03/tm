@@ -114,23 +114,16 @@ const FullTimeline = () => (
       </Step>
     </ul>
     <Divider />
-    <Year>2008</Year>
+    <Year>2010</Year>
     <ul>
       <Step title="First Computer 💻">
         I played GTA San Andreas all day, everyday.
       </Step>
     </ul>
     <Divider />
-    <Year>2001</Year>
+    <Year>2003</Year>
     <ul>
-      <Step title="Moved to Jaipur, Rajasthan 🌆">
-        We moved to Jaipur from our Hometown.
-      </Step>
-    </ul>
-    <Divider />
-    <Year>1998</Year>
-    <ul>
-      <Step title="An Enginner was Born in India 👶🏼 🍼" />
+      <Step title="An Enginner was Born in Nigeria 👶🏼 🍼" />
     </ul>
   </>
 );

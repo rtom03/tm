@@ -59,23 +59,28 @@ export default function Contact() {
       <p className="my-1 text-gray-800 dark:text-gray-200">
         Drop your message and let's discuss about your project.
       </p>
-      <span
-        href="https://wa.me/919587738861?text=I want to work on a project with you"
-        className="mt-4 px-4 text-center w-full font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded"
-        type="submit"
-      >
-        Chat on WhatsApp
-      </span>
+      {/* <a href="https://wa.me/2348012345678" target="_blank">
+  Chat with me on WhatsApp
+</a> */}
+
+      <Link href="https://wa.me/2349016672162?text=I want to work on a project with you">
+        <span
+          className="mt-4 px-4 text-center w-full cursor-pointer font-bold h-8 bg-green-400 dark:bg-green-400 text-gray-900 py-1 dark:text-gray-900 rounded"
+          type="submit"
+        >
+          Chat on WhatsApp
+        </span>
+      </Link>
 
       <Divider />
-      <p className="my-1 text-gray-800 dark:text-gray-200">
+      {/* <p className="my-1 text-gray-800 dark:text-gray-200">
         Drop in your email ID and I will get back to you.
       </p>
       <form className="relative my-4" onSubmit={subscribe}>
         <input
           ref={inputEl}
           aria-label="Email for newsletter"
-          placeholder="manu@gmail.com"
+          placeholder="zuckm709@gmail.com"
           type="email"
           autoComplete="email"
           required
@@ -87,7 +92,7 @@ export default function Contact() {
         >
           {form.state === "Sending" ? <LoadingSpinner /> : "Send"}
         </button>
-      </form>
+      </form> */}
 
       {form.state === "error" ? (
         <ErrorMessage>{form.message}</ErrorMessage>
